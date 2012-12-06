@@ -84,6 +84,22 @@ var Portfolio={
 						description:'',
 						keywords:'flash, as3, 3d DAE',
 						url:'http://www.decaoparacao.com/'
+					},
+					{
+						id:11,
+						title:'Greensolutions',
+						image:'websites/greensolutions.png',
+						description:'',
+						keywords:'flash, as3, php',
+						url:'http://www.greensolutions.pt/'
+					},
+					{
+						id:12,
+						title:'Companhia de actores',
+						image:'websites/cda.png',
+						description:'',
+						keywords:'flash, as3, xml',
+						url:'http://www.companhiadeactores.com/'
 					}
 				]
 			},
@@ -178,6 +194,14 @@ var Portfolio={
 						description:'',
 						keywords:'flash, as3',
 						url:'offline'
+					},
+					{
+						id:12,
+						title:"M&M's Postal de Natal",
+						image:'',
+						description:'',
+						keywords:'flash, as3',
+						url:'offline'
 					}
 				]
 			},
@@ -251,7 +275,15 @@ var Portfolio={
 					},
 					{
 						id:9,
-						title:'M&Ms PuzzleBubble',
+						title:'Chipicao PuzzleBubble',
+						image:'',
+						description:'',
+						keywords:'flash, as3',
+						url:'offline'
+					},
+					{
+						id:10,
+						title:'Chipicao PopBubbles',
 						image:'',
 						description:'',
 						keywords:'flash, as3',
