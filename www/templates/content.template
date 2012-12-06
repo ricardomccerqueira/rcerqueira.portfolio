@@ -1,0 +1,31 @@
+<section id="<%= item.title %>" class="sectionsHolder">
+	<% _.each(item.articles, function(article) { %>
+		<article class="<%= item.title %> item" >
+			<figure>
+				<img src="img/<%=article.image %>" alt="<%= article.title %>">
+			</figure>
+
+			<div class="item-description">
+				<h1 class="name">
+					<%= article.title %>
+				</h1>
+
+				<h2>
+					<%= article.description %>
+				</h2>
+
+				<p>
+					<%= article.keywords %>
+				</p>
+
+				<p>
+					<% if(article.url == 'offline'){ %>
+
+					<% }else{ %>
+						<a href="<%= article.url %>" target="_blank">View More</a>
+					<% } %>
+				</p>
+			</div>
+		</article>
+	<% }); %>
+</section>
