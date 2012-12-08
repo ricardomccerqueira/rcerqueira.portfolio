@@ -5,7 +5,20 @@ audio:not([controls]) { display: none; }
 
 html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 html, button, input, select, textarea { font-family: 'Open Sans', arial, sans-serif; color: #222; }
-body { margin: 0; font-size: 1em; line-height: 1.4; background-color:#eae9e4; background-image: url(../img/background.png)}
+body { 
+    margin: 0; 
+    font-size: 1em; 
+    line-height: 1.4; 
+    background: #252525; /* Old browsers */
+    background: -moz-linear-gradient(top,  #252525 0%, #1e1000 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#252525), color-stop(100%,#1e1000)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #252525 0%,#1e1000 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #252525 0%,#1e1000 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #252525 0%,#1e1000 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #252525 0%,#1e1000 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#252525', endColorstr='#1e1000',GradientType=0 ); /* IE6-9 */
+
+}
 html, body {min-height: 101%;}
 
 ::-moz-selection { background: gray; color: #fff; text-shadow: none; }
@@ -86,10 +99,12 @@ td { vertical-align: top; }
     #header{
         overflow: hidden;
         margin: 20px 0;
+        margin-top: 0;
         padding: 5px;
         border-bottom: 1px solid black;
         padding-bottom: 15px;
         box-shadow: 0 0 0 gray;
+        background: #EAE9E4;
 
         transition:box-shadow 0.3s;
         -moz-transition:box-shadow 0.3s;
