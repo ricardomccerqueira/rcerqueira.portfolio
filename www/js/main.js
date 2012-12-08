@@ -8,7 +8,7 @@ var Portfolio={
 					{
 						id:1,
 						title:'Aveleda',
-						image:'websites/aveleda.png',
+						image:'websites/aveleda.jpg',
 						description:'',
 						keywords:'HTML5, js, css3',
 						url:'http://www.aveleda.pt'
@@ -16,7 +16,7 @@ var Portfolio={
 					{
 						id:2,
 						title:'PromoFans',
-						image:'websites/promofans.png',
+						image:'websites/promofans.jpg',
 						description:'',
 						keywords:'HTML5, js, css3, less',
 						url:'http://www.promofans.pt'
@@ -24,7 +24,7 @@ var Portfolio={
 					{
 						id:3,
 						title:'Str8 Portugal',
-						image:'websites/str8.png',
+						image:'websites/str8.jpg',
 						description:'',
 						keywords:'HTML5, js, css3, less',
 						url:'http://www.str8-pt.com/'
@@ -32,7 +32,7 @@ var Portfolio={
 					{
 						id:4,
 						title:'BU Portugal',
-						image:'websites/bu.png',
+						image:'websites/bu.jpg',
 						description:'',
 						keywords:'HTML5, js, css3, parallax',
 						url:'http://bu-pt.com/'
@@ -40,7 +40,7 @@ var Portfolio={
 					{
 						id:5,
 						title:'Consumos Frota',
-						image:'websites/consumosfrota.png',
+						image:'websites/consumosfrota.jpg',
 						description:'',
 						keywords:'HTML5, js, css3',
 						url:'http://www.consumosfrota.com/'
@@ -48,7 +48,7 @@ var Portfolio={
 					{
 						id:6,
 						title:'Parques de Sintra - Homepage',
-						image:'websites/psml.png',
+						image:'websites/psml.jpg',
 						description:'',
 						keywords:'HTML5, js, css3, less',
 						url:'http://www.parquesdesintra.pt/'
@@ -56,7 +56,7 @@ var Portfolio={
 					{
 						id:7,
 						title:'Estrelas e Ouriços',
-						image:'websites/estrelas.png',
+						image:'websites/estrelas.jpg',
 						description:'',
 						keywords:'HTML, css',
 						url:'http://estrelaseouricos.familia.sapo.pt/'
@@ -64,7 +64,7 @@ var Portfolio={
 					{
 						id:8,
 						title:'Nunes Correa',
-						image:'websites/nunescorrea.png',
+						image:'websites/nunescorrea.jpg',
 						description:'',
 						keywords:'HTML, css',
 						url:'http://www.nunescorrea.com/'
@@ -72,7 +72,7 @@ var Portfolio={
 					{
 						id:9,
 						title:'Txiling Moçambique',
-						image:'websites/sapotxilling.png',
+						image:'websites/sapotxilling.jpg',
 						description:'',
 						keywords:'HTML, css',
 						url:'http://txiling.sapo.mz/'
@@ -80,7 +80,7 @@ var Portfolio={
 					{
 						id:10,
 						title:'De Cão para Cão - tamagochi',
-						image:'websites/decaoparacao.png',
+						image:'websites/decaoparacao.jpg',
 						description:'',
 						keywords:'flash, as3, 3d DAE',
 						url:'http://www.decaoparacao.com/'
@@ -88,7 +88,7 @@ var Portfolio={
 					{
 						id:11,
 						title:'Greensolutions',
-						image:'websites/greensolutions.png',
+						image:'websites/greensolutions.jpg',
 						description:'',
 						keywords:'flash, as3, php',
 						url:'http://www.greensolutions.pt/'
@@ -96,7 +96,7 @@ var Portfolio={
 					{
 						id:12,
 						title:'Companhia de actores',
-						image:'websites/cda.png',
+						image:'websites/cda.jpg',
 						description:'',
 						keywords:'flash, as3, xml',
 						url:'http://www.companhiadeactores.com/'
@@ -110,7 +110,7 @@ var Portfolio={
 					{
 						id:1,
 						title:'Sally Hansen - New Products',
-						image:'applications/sallyhansennewproducts.png',
+						image:'applications/sallyhansennewproducts.jpg',
 						description:'',
 						keywords:'HTML5, js, css3',
 						url:'https://www.facebook.com/sallyhansenportugal/app_537952529553764'
@@ -118,7 +118,7 @@ var Portfolio={
 					{
 						id:2,
 						title:'Sally Hansen - You And Sally',
-						image:'applications/sallyhansenyas.png',
+						image:'applications/sallyhansenyas.jpg',
 						description:'',
 						keywords:'HTML5, js, css3',
 						url:'https://www.facebook.com/sallyhansenportugal/app_500581289967114'
@@ -126,7 +126,7 @@ var Portfolio={
 					{
 						id:3,
 						title:'Nunes Correa Loja Online',
-						image:'applications/nunescorrealojaonline.png',
+						image:'applications/nunescorrealojaonline.jpg',
 						description:'',
 						keywords:'HTML5, js, css3',
 						url:'https://www.facebook.com/nunescorrea/app_288167261299097?ref=ts'
@@ -134,7 +134,7 @@ var Portfolio={
 					{
 						id:4,
 						title:'Holon - Pela Sua Saúde',
-						image:'applications/holonpelasuasaude.png',
+						image:'applications/holonpelasuasaude.jpg',
 						description:'',
 						keywords:'HTML, js, css, php',
 						url:'https://www.facebook.com/grupoholonpt/app_270474949683215'
@@ -142,7 +142,7 @@ var Portfolio={
 					{
 						id:5,
 						title:'Holon - Produtos Holon',
-						image:'applications/holonprodutos.png',
+						image:'applications/holonprodutos.jpg',
 						description:'',
 						keywords:'HTML, js, css, php',
 						url:'https://www.facebook.com/grupoholonpt/app_318275281539264'
@@ -150,7 +150,7 @@ var Portfolio={
 					{
 						id:6,
 						title:'Holon - Quem Somos',
-						image:'applications/holonquemsomos.png',
+						image:'applications/holonquemsomos.jpg',
 						description:'',
 						keywords:'HTML, js, css, php',
 						url:'https://www.facebook.com/grupoholonpt/app_102195923234549'
@@ -158,7 +158,7 @@ var Portfolio={
 					{
 						id:7,
 						title:'Facebook application template',
-						image:'applications/fbsinglepagetemplate.png',
+						image:'applications/fbsinglepagetemplate.jpg',
 						description:'',
 						keywords:'HTML5, js, css, sammyJs, gitHub',
 						url:'https://github.com/ricardomccerqueira/facebook-singlepageapp'
@@ -166,7 +166,7 @@ var Portfolio={
 					{
 						id:8,
 						title:'Millenium Go Festivais',
-						image:'applications/gofestivais.png',
+						image:'applications/gofestivais.jpg',
 						description:'',
 						keywords:'HTML, js, css, php',
 						url:'https://www.facebook.com/millenniumgo/app_459727847372815'
@@ -174,7 +174,7 @@ var Portfolio={
 					{
 						id:9,
 						title:'Continente - Chef Online',
-						image:'applications/chefonline.png',
+						image:'applications/chefonline.jpg',
 						description:'',
 						keywords:'flash, as3, interactive display',
 						url:'offline'
@@ -182,7 +182,7 @@ var Portfolio={
 					{
 						id:10,
 						title:'Massimo Dutti',
-						image:'applications/massimodutti.png',
+						image:'applications/massimodutti.jpg',
 						description:'',
 						keywords:'flash, as3, interactive display, webcam',
 						url:'offline'
@@ -190,7 +190,7 @@ var Portfolio={
 					{
 						id:11,
 						title:'Millenium Go CoverPhoto',
-						image:'applications/gocover.png',
+						image:'applications/gocover.jpg',
 						description:'',
 						keywords:'flash, as3',
 						url:'https://www.facebook.com/millenniumgo/app_305417722896806'
@@ -198,7 +198,7 @@ var Portfolio={
 					{
 						id:12,
 						title:"M&M's Postal de Natal",
-						image:'applications/mmspostalnatal.png',
+						image:'applications/mmspostalnatal.jpg',
 						description:'',
 						keywords:'flash, as3, animated-card',
 						url:'https://www.facebook.com/mms.portugal/app_249304888531922'
@@ -206,7 +206,7 @@ var Portfolio={
 					{
 						id:13,
 						title:"Tmn tree",
-						image:'applications/tmntree.png',
+						image:'applications/tmntree.jpg',
 						description:'',
 						keywords:'flash, as3, animation-bones',
 						url:'offline'
@@ -220,7 +220,7 @@ var Portfolio={
 					{
 						id:1,
 						title:'Chipicao - streetfighter',
-						image:'games/chipistreetfighter.png',
+						image:'games/chipistreetfighter.jpg',
 						description:'',
 						keywords:'flash, as3, multiplayer',
 						url:'offline'
@@ -228,7 +228,7 @@ var Portfolio={
 					{
 						id:2,
 						title:'Chipicao - chipiskater',
-						image:'games/chipiSkate.png',
+						image:'games/chipiSkate.jpg',
 						description:'',
 						keywords:'flash, as3',
 						url:'offline'
@@ -236,7 +236,7 @@ var Portfolio={
 					{
 						id:3,
 						title:'Chipicao - chipijumper',
-						image:'games/chipijump.png',
+						image:'games/chipijump.jpg',
 						description:'',
 						keywords:'flash, as3',
 						url:'offline'
@@ -244,7 +244,7 @@ var Portfolio={
 					{
 						id:4,
 						title:'Chipicao - tazos',
-						image:'games/chipitazos.png',
+						image:'games/chipitazos.jpg',
 						description:'',
 						keywords:'flash, as3',
 						url:'offline'
@@ -252,7 +252,7 @@ var Portfolio={
 					{
 						id:5,
 						title:'Adidas Kick the Ball',
-						image:'games/adidasKicktheBall.png',
+						image:'games/adidasKicktheBall.jpg',
 						description:'',
 						keywords:'flash, as3, banner',
 						url:'offline'
@@ -260,7 +260,7 @@ var Portfolio={
 					{
 						id:6,
 						title:'M&Ms Catch The Peanut',
-						image:'games/mmscatchpeanut.png',
+						image:'games/mmscatchpeanut.jpg',
 						description:'',
 						keywords:'flash, as3, box2D',
 						url:'offline'
@@ -268,7 +268,7 @@ var Portfolio={
 					{
 						id:7,
 						title:'M&Ms Mug Run',
-						image:'games/mugrun.png',
+						image:'games/mugrun.jpg',
 						description:'',
 						keywords:'flash, as3',
 						url:'offline'
@@ -276,7 +276,7 @@ var Portfolio={
 					{
 						id:8,
 						title:'M&Ms to bowl',
-						image:'games/mmstobowl.png',
+						image:'games/mmstobowl.jpg',
 						description:'',
 						keywords:'flash, as3, box2D',
 						url:'offline'
@@ -284,7 +284,7 @@ var Portfolio={
 					{
 						id:9,
 						title:'Chipicao PuzzleBubble',
-						image:'games/chipicaoPuzzleBubble.png',
+						image:'games/chipicaoPuzzleBubble.jpg',
 						description:'',
 						keywords:'flash, as3',
 						url:'offline'
@@ -292,7 +292,7 @@ var Portfolio={
 					{
 						id:10,
 						title:'SonyEricson HopperInvasion',
-						image:'games/hooperinvasionracinggame.png',
+						image:'games/hooperinvasionracinggame.jpg',
 						description:'',
 						keywords:'flash, as2',
 						url:'offline'
