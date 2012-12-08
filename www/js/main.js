@@ -228,7 +228,7 @@ var Portfolio={
 					{
 						id:2,
 						title:'Chipicao - chipiskater',
-						image:'games/gamename.png',
+						image:'games/chipiSkate.png',
 						description:'',
 						keywords:'flash, as3',
 						url:'offline'
@@ -243,10 +243,10 @@ var Portfolio={
 					},
 					{
 						id:4,
-						title:'Chipicao - tazos 3D',
-						image:'games/gamename.png',
+						title:'Chipicao - tazos',
+						image:'games/chipitazos.png',
 						description:'',
-						keywords:'flash, as3, 3d DAE',
+						keywords:'flash, as3',
 						url:'offline'
 					},
 					{
@@ -284,7 +284,7 @@ var Portfolio={
 					{
 						id:9,
 						title:'Chipicao PuzzleBubble',
-						image:'games/gamename.png',
+						image:'games/chipicaoPuzzleBubble.png',
 						description:'',
 						keywords:'flash, as3',
 						url:'offline'
