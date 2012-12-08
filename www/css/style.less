@@ -4,27 +4,27 @@ audio:not([controls]) { display: none; }
 [hidden] { display: none; }
 
 html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-html, button, input, select, textarea { font-family: 'Open Sans', arial, sans-serif; color: #222; }
+html, button, input, select, textarea { font-family: 'Open Sans', arial, sans-serif; color: @dark-text-color; }
 body { 
     margin: 0; 
     font-size: 1em; 
     line-height: 1.4; 
     background: #252525; /* Old browsers */
-    background: -moz-linear-gradient(top,  #252525 0%, #1e1000 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#252525), color-stop(100%,#1e1000)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  #252525 0%,#1e1000 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  #252525 0%,#1e1000 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  #252525 0%,#1e1000 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  #252525 0%,#1e1000 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#252525', endColorstr='#1e1000',GradientType=0 ); /* IE6-9 */
-
+    background: -moz-linear-gradient(top,  #252525 0%, #110200 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#252525), color-stop(100%,#110200)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #252525 0%,#110200 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #252525 0%,#110200 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #252525 0%,#110200 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #252525 0%,#110200 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#252525', endColorstr='#110200',GradientType=0 ); /* IE6-9 */
 }
+
 html, body {min-height: 101%;}
 
 ::-moz-selection { background: gray; color: #fff; text-shadow: none; }
 ::selection { background: gray; color: #fff; text-shadow: none; }
 
-a { color: black; }
+a { color: @dark-text-color ; }
 a:visited { color: #551a8b; }
 a:hover { color: #06e; }
 a:focus { outline: thin dotted; }
@@ -84,6 +84,7 @@ td { vertical-align: top; }
 
 @css-transition-intro   :all 1s;
 @css-transition         :all 0.5s;
+@dark-text-color        :#1A1210;
 
 #main-wraper{
     min-height: 70%;
@@ -104,7 +105,15 @@ td { vertical-align: top; }
         border-bottom: 1px solid black;
         padding-bottom: 15px;
         box-shadow: 0 0 0 gray;
-        background: #EAE9E4;
+        background: #eae9e4; /* Old browsers */
+        background: -moz-linear-gradient(top,  #eae9e4 0%, #e0ddd5 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eae9e4), color-stop(100%,#e0ddd5)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  #eae9e4 0%,#e0ddd5 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  #eae9e4 0%,#e0ddd5 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  #eae9e4 0%,#e0ddd5 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  #eae9e4 0%,#e0ddd5 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eae9e4', endColorstr='#e0ddd5',GradientType=0 ); /* IE6-9 */
+
 
         transition:box-shadow 0.3s;
         -moz-transition:box-shadow 0.3s;
@@ -164,13 +173,13 @@ td { vertical-align: top; }
                         text-decoration: none;
                         font-weight: 600;
                         text-transform: uppercase;
-                        color: black;
+                        color: @dark-text-color;
                     }
 
                     .underline{
                         display:block;
                         width:100%;
-                        background-color:black;
+                        background-color:@dark-text-color;
                         height:3px;
                     }
                 }
@@ -215,10 +224,10 @@ td { vertical-align: top; }
 
             figure{
                 position: absolute;
-                transition:top 0.3s;
-                -moz-transition:top 0.3s;
-                -webkit-transition:top 0.3s;
-                -o-transition:top 0.3s;
+                transition:top 0.5s;
+                -moz-transition:top 0.5s;
+                -webkit-transition:top 0.5s;
+                -o-transition:top 0.5s;
             }
 
             .item-description{
@@ -231,10 +240,15 @@ td { vertical-align: top; }
                 opacity: 0.9;
                 padding: 10px;
 
-                transition:top 0.3s;
-                -moz-transition:top 0.3s;
-                -webkit-transition:top 0.3s;
-                -o-transition:top 0.3s;
+                transition:top 0.4s;
+                -moz-transition:top 0.4s;
+                -webkit-transition:top 0.4s;
+                -o-transition:top 0.4s;
+
+                h1{
+                    font-family: 'Yanone Kaffeesatz';
+                    font-size: 25px;
+                }
 
                 a{
                     text-decoration: none;
@@ -265,13 +279,19 @@ td { vertical-align: top; }
         position:fixed;
         border-top: 1px solid black;
 
-        background-color:#eae9e4; 
-        background-image: url(../img/background.png);
+        background: #eae9e4; /* Old browsers */
+        background: -moz-linear-gradient(top,  #eae9e4 0%, #e0ddd5 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eae9e4), color-stop(100%,#e0ddd5)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  #eae9e4 0%,#e0ddd5 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  #eae9e4 0%,#e0ddd5 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  #eae9e4 0%,#e0ddd5 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  #eae9e4 0%,#e0ddd5 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eae9e4', endColorstr='#e0ddd5',GradientType=0 ); /* IE6-9 */
 
-        transition:box-shadow 0.3s;
-        -moz-transition:box-shadow 0.3s;
-        -webkit-transition:box-shadow 0.3s;
-        -o-transition:box-shadow 0.3s;
+        transition:all 0.3s;
+        -moz-transition:all 0.3s;
+        -webkit-transition:all 0.3s;
+        -o-transition:all 0.3s;
 
         &:hover{  
             box-shadow: 0 -3px 4px gray;
