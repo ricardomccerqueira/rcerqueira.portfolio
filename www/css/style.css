@@ -473,6 +473,13 @@ td {
 #main-wraper #footer ul li a:hover {
   opacity: 1;
 }
+#main-wraper #contactFormHolder {
+  width: 100%;
+  background: red;
+  height: 200px;
+  position: absolute;
+  bottom: -200px;
+}
 /* ==|== non-semantic helper classes ========================================
    ========================================================================== */
 .ir {
