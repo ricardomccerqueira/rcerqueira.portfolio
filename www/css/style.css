@@ -40,30 +40,7 @@ body {
   margin: 0;
   font-size: 1em;
   line-height: 1.4;
-  background: #252525;
-  /* Old browsers */
-
-  background: -moz-linear-gradient(top, #252525 0%, #110200 100%);
-  /* FF3.6+ */
-
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #252525), color-stop(100%, #110200));
-  /* Chrome,Safari4+ */
-
-  background: -webkit-linear-gradient(top, #252525 0%, #110200 100%);
-  /* Chrome10+,Safari5.1+ */
-
-  background: -o-linear-gradient(top, #252525 0%, #110200 100%);
-  /* Opera 11.10+ */
-
-  background: -ms-linear-gradient(top, #252525 0%, #110200 100%);
-  /* IE10+ */
-
-  background: linear-gradient(to bottom, #252525 0%, #110200 100%);
-  /* W3C */
-
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#252525', endColorstr='#110200', GradientType=0);
-  /* IE6-9 */
-
+  background: #0a0a0a;
 }
 html,
 body {
@@ -311,41 +288,11 @@ td {
   padding: 5px;
   border-bottom: 1px solid black;
   padding-bottom: 15px;
-  box-shadow: 0 0 0 gray;
-  background: #eae9e4;
-  /* Old browsers */
-
-  background: -moz-linear-gradient(top, #eae9e4 0%, #e0ddd5 100%);
-  /* FF3.6+ */
-
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eae9e4), color-stop(100%, #e0ddd5));
-  /* Chrome,Safari4+ */
-
-  background: -webkit-linear-gradient(top, #eae9e4 0%, #e0ddd5 100%);
-  /* Chrome10+,Safari5.1+ */
-
-  background: -o-linear-gradient(top, #eae9e4 0%, #e0ddd5 100%);
-  /* Opera 11.10+ */
-
-  background: -ms-linear-gradient(top, #eae9e4 0%, #e0ddd5 100%);
-  /* IE10+ */
-
-  background: linear-gradient(to bottom, #eae9e4 0%, #e0ddd5 100%);
-  /* W3C */
-
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eae9e4', endColorstr='#e0ddd5', GradientType=0);
-  /* IE6-9 */
-
-  transition: box-shadow 0.3s;
-  -moz-transition: box-shadow 0.3s;
-  -webkit-transition: box-shadow 0.3s;
-  -o-transition: box-shadow 0.3s;
-}
-#main-wraper #header:hover {
-  box-shadow: 0 3px 4px gray;
+  box-shadow: 1px 1px 1px #323232;
 }
 #main-wraper #header #logo {
-  text-shadow: 2px 1px 3px gray;
+  margin-left: 20px;
+  color: #505050;
 }
 #main-wraper #header #logo #logo-name {
   margin: 0;
@@ -355,12 +302,11 @@ td {
   font-family: 'Yanone Kaffeesatz';
 }
 #main-wraper #header #logo #logo-profession {
-  font-weight: 400;
   margin: 0;
   text-transform: uppercase;
   font-size: 27px;
-  letter-spacing: 0;
-  word-spacing: -5px;
+  font-family: 'Yanone Kaffeesatz';
+  font-weight: 300;
 }
 #main-wraper #header #nav {
   height: 25px;
@@ -384,19 +330,36 @@ td {
 #main-wraper #header #nav ul li:hover {
   height: 25px;
 }
+#main-wraper #header #nav ul li:hover > .underline {
+  background-color: #ffffff;
+}
+#main-wraper #header #nav ul li:hover > a {
+  color: #ffffff;
+}
 #main-wraper #header #nav ul li.selected-menu {
   height: 25px;
+}
+#main-wraper #header #nav ul li.selected-menu .underline {
+  background-color: #ffffff;
+}
+#main-wraper #header #nav ul li.selected-menu a {
+  color: #ffffff;
 }
 #main-wraper #header #nav ul li a {
   text-decoration: none;
   font-weight: 600;
   text-transform: uppercase;
-  color: #1a1210;
+  color: #505050;
+  transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
 }
 #main-wraper #header #nav ul li .underline {
   display: block;
   width: 100%;
-  background-color: #1a1210;
+  background-color: #505050;
   height: 3px;
 }
 #main-wraper #content {
@@ -407,6 +370,8 @@ td {
   margin-bottom: 120px;
 }
 #main-wraper #content .item {
+  /* -webkit-filter: grayscale(100%);*/
+
   width: 300px;
   height: 170px;
   overflow: hidden;
@@ -418,6 +383,11 @@ td {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   -ms-transition: all 0.5s;
+  /*
+            &:hover{
+                -webkit-filter: grayscale(0%);  
+            }*/
+
 }
 #main-wraper #content .item:hover > figure {
   top: -170px;
@@ -443,8 +413,7 @@ td {
   position: absolute;
   width: 280px;
   height: 180px;
-  background-image: url(../img/pattern.png);
-  background-color: white;
+  background-color: black;
   top: 200px;
   opacity: 0.9;
   padding: 10px;
@@ -452,6 +421,7 @@ td {
   -moz-transition: top 0.4s;
   -webkit-transition: top 0.4s;
   -o-transition: top 0.4s;
+  color: #ffffff;
 }
 #main-wraper #content .item .item-description h1 {
   font-family: 'Yanone Kaffeesatz';
@@ -463,7 +433,7 @@ td {
   top: 200px;
   right: 10px;
   opacity: 0;
-  color: black;
+  color: #ffffff;
   transition: all 0.7s;
   -moz-transition: all 0.7s;
   -webkit-transition: all 0.7s;
@@ -476,43 +446,15 @@ td {
   width: 100%;
   margin-top: 50px;
   bottom: 0;
-  height: 50px;
+  height: 38px;
   position: fixed;
-  border-top: 1px solid black;
-  background: #eae9e4;
-  /* Old browsers */
-
-  background: -moz-linear-gradient(top, #eae9e4 0%, #e0ddd5 100%);
-  /* FF3.6+ */
-
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eae9e4), color-stop(100%, #e0ddd5));
-  /* Chrome,Safari4+ */
-
-  background: -webkit-linear-gradient(top, #eae9e4 0%, #e0ddd5 100%);
-  /* Chrome10+,Safari5.1+ */
-
-  background: -o-linear-gradient(top, #eae9e4 0%, #e0ddd5 100%);
-  /* Opera 11.10+ */
-
-  background: -ms-linear-gradient(top, #eae9e4 0%, #e0ddd5 100%);
-  /* IE10+ */
-
-  background: linear-gradient(to bottom, #eae9e4 0%, #e0ddd5 100%);
-  /* W3C */
-
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eae9e4', endColorstr='#e0ddd5', GradientType=0);
-  /* IE6-9 */
-
-  transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-}
-#main-wraper #footer:hover {
-  box-shadow: 0 -3px 4px #808080;
+  border-top: 1px solid #323232;
+  background-color: #323232;
 }
 #main-wraper #footer ul {
   list-style-type: none;
+  padding-top: 7px;
+  margin: 0;
 }
 #main-wraper #footer ul li {
   float: left;
@@ -526,10 +468,10 @@ td {
   -moz-transition: opacity 0.3s;
   -webkit-transition: opacity 0.3s;
   -o-transition: opacity 0.3s;
+  color: white;
 }
 #main-wraper #footer ul li a:hover {
   opacity: 1;
-  color: black;
 }
 /* ==|== non-semantic helper classes ========================================
    ========================================================================== */
@@ -699,7 +641,7 @@ td {
   }
   #logo {
     width: 305px;
-    margin: auto;
+    margin: auto !important;
     float: none;
   }
   #nav {
@@ -713,7 +655,7 @@ td {
     position: relative;
   }
   #nav ul li:first-child {
-    margin-left: 16px;
+    margin-left: 3px;
   }
 }
 @media screen and (max-width: 605px) {
