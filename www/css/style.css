@@ -476,9 +476,10 @@ td {
 #main-wraper #contactFormHolder {
   width: 100%;
   background: red;
-  height: 200px;
-  position: absolute;
-  bottom: -200px;
+  position: relative;
+  margin-top: 600px;
+  height: 1600px;
+  display: none;
 }
 /* ==|== non-semantic helper classes ========================================
    ========================================================================== */
