@@ -106,81 +106,85 @@ td { vertical-align: top; }
         padding-bottom: 15px;
         box-shadow: 1px 1px 1px @halfDark-background;
 
-        #logo{
-            margin-left: 20px;
-            color:@dark-text;
-                       
-            #logo-name{
-                margin: 0;
-                font-size: 53px;
-                padding: 0;
-                margin-bottom: -15px;
-                font-family: 'Yanone Kaffeesatz';
+        #headerCenteredContent{
+            margin:auto;
+            max-width: 1210px;
+
+            #logo{
+                color:@dark-text;
+                           
+                #logo-name{
+                    margin: 0;
+                    font-size: 53px;
+                    padding: 0;
+                    margin-bottom: -15px;
+                    font-family: 'Yanone Kaffeesatz';
+                }
+
+                #logo-profession{
+                    margin: 0;
+                    text-transform: uppercase;
+                    font-size: 27px;
+                    font-family: 'Yanone Kaffeesatz';
+                    font-weight: 300;
+                }
             }
 
-            #logo-profession{
-                margin: 0;
-                text-transform: uppercase;
-                font-size: 27px;
-                font-family: 'Yanone Kaffeesatz';
-                font-weight: 300;
-            }
-        }
+            #nav{
+                height: 25px;
+                position: relative;
+                top: 10px;
+                padding-top: 55px;
+                padding-left: 10px;
+                overflow: hidden;
 
-        #nav{
-            height: 25px;
-            position: relative;
-            top: 10px;
-            padding-top: 55px;
-            padding-left: 10px;
-            overflow: hidden;
+                ul{
+                    li{
+                        margin-left:30px;
+                        position: relative;
+                        height:20px;
+                        overflow:hidden;
+                        .anim();
 
-            ul{
-                li{
-                    margin-right:30px;
-                    position: relative;
-                    height:20px;
-                    overflow:hidden;
-                    .anim();
+                        &:hover{
+                            height:25px;
+                        }
 
-                    &:hover{
-                        height:25px;
-                    }
-
-                    &:hover > .underline{
-                       background-color:@light-text;
-                    }
-
-                    &:hover > a{
-                        color:@light-text;
-                    }
-
-                    &.selected-menu{
-                        height:25px;
-
-                        .underline{
+                        &:hover > .underline{
                            background-color:@light-text;
                         }
 
-                        a{
-                            color:@light-text;                            
+                        &:hover > a{
+                            color:@light-text;
                         }
-                    }
 
-                    a{
-                        text-decoration: none;
-                        font-weight: 600;
-                        text-transform: uppercase;
-                        color: @dark-text;
+                        &.selected-menu{
+                            height:25px;
 
-                        .anim();
-                    }
+                            .underline{
+                               background-color:@light-text;
+                            }
 
-                    .underline{
-                        display:block;
-                        width:100%;
-                        background-color:@dark-text;
-                        height:3px;
+                            a{
+                                color:@light-text;                            
+                            }
+                        }
+
+                        a{
+                            text-decoration: none;
+                            font-weight: 600;
+                            text-transform: uppercase;
+                            color: @dark-text;
+
+                            .anim();
+                        }
+
+                        .underline{
+                            display:block;
+                            width:100%;
+                            background-color:@dark-text;
+                            height:3px;
+                        }
                     }
                 }
             }
@@ -412,8 +416,13 @@ td { vertical-align: top; }
 
 @media screen and (max-width: 1240px){
   #content{
-    width: 930px;
+    width: 900px;
+    padding-right:35px;
     margin: auto;
+  }
+
+  #headerCenteredContent{
+    width:930px;
   }
 }
 
@@ -421,6 +430,10 @@ td { vertical-align: top; }
  #content{
     width: 620px;
     margin: auto;
+  }
+
+  #headerCenteredContent{
+    width:620px;
   }
 
   #logo{
@@ -448,10 +461,14 @@ td { vertical-align: top; }
 }
 
 @media screen and (max-width : 605px){
- #content{
-    width: 300px;
-    margin: auto;
-  }
+    #content{
+        width: 300px;
+        margin: auto;
+    }
+
+    #headerCenteredContent{
+        width:300px;
+    }
 
     #nav{
         padding-top: 0 !important;
