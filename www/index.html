@@ -91,6 +91,10 @@
           <li>
             <a href="http://www.delicious.com/ricardocerqueira" target="_blank"><img src="img/icon_delicious.png" /></a>
           </li>
+
+          <li>
+            <div class="g-plusone" data-size="medium" data-annotation="none" data-href="www.rcerqueira.com"></div>
+          </li>
         </ul>
       </footer>
 
@@ -111,5 +115,24 @@
     $(function(){
       Portfolio.init();
     });
+ 
+    //analytics
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-37357037-1']);
+    _gaq.push(['_setDomainName', 'rcerqueira.com']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+    //google Plus
+    (function() {
+      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+      po.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    })();
   </script>
 </html>
