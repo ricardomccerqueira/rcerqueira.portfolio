@@ -23,8 +23,9 @@ External libraries used
 	##css variables:
 		http://lesscss.org/  
 
+	##github like ribbon, wich i use to open my resumee if you have a larger screen:
+		https://github.com/hakimel/forkit.js
 
 Credits
 ======================
-
 		##no one atm
