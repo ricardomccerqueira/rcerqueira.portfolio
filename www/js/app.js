@@ -6,7 +6,7 @@ Portfolio.app=$.sammy(function(){
 
 	this.swap = function(content,container,callback,params) {
 		var context = this;
-		$('.item').animate({ scale: '0'}, 100);
+		$('.item').animate({ scale: '0'}, 200);
 		$('body').addClass('preloading');
 
 		container.fadeOut('slow', function() {
@@ -14,7 +14,7 @@ Portfolio.app=$.sammy(function(){
 
 			$('.item').animate({ scale: '0'}, 0);
 
-			container.fadeIn('slow');
+			container.fadeIn('fast');
 
 			if(callback){
 				if(params){

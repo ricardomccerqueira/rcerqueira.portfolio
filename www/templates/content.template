@@ -20,9 +20,9 @@
 
 				<p>
 					<% if(article.url == 'offline'){ %>
-
+						<a href="#" class="offline" target="_blank">Offline</a>
 					<% }else{ %>
-						<a href="<%= article.url %>" target="_blank">View More</a>
+						<a href="<%= article.url %>" target="_blank">View Online</a>
 					<% } %>
 				</p>
 			</div>

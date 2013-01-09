@@ -285,7 +285,15 @@ $(function(){
 			}
 
 			dom.ribbon.style[ prefix( 'transform' ) ] = transform( 0, curtainCurrentY, 0 );
+			
+			if(rotation < 108){
+				$(".forkit").addClass('crop-it');
+			}else{
+				$(".forkit").removeClass('crop-it');
+			}
+			
 			dom.ribbonTag.style[ prefix( 'transform' ) ] = transform( anchorB.x, anchorB.y, rotation );
+			
 
 			var dy = anchorB.y - anchorA.y,
 				dx = anchorB.x - anchorA.x;

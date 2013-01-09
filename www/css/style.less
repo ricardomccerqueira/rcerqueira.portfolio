@@ -205,7 +205,7 @@ td { vertical-align: top; }
             height: 170px;
             overflow: hidden;
             position: relative;
-            background: #888;
+            background: black;
             color: #222;
             
             .anim();
@@ -267,6 +267,9 @@ td { vertical-align: top; }
                     right:10px;
                     opacity: 0;
                     color: @light-text;
+                    font-family:'Yanone Kaffeesatz','Open Sans', arial;
+                    font-weight: 600;
+                    text-transform: uppercase;
 
                     transition:all 0.7s;
                     -moz-transition:all 0.7s;
@@ -275,6 +278,10 @@ td { vertical-align: top; }
 
                     &:hover{
                         opacity:1; 
+                    }
+
+                    &.offline{
+                        pointer-events:none;
                     }
                 }
             }
@@ -413,8 +420,11 @@ Forkit
     width: 175px;
     height: 450px;
 
-    text-decoration: none;
-    overflow:hidden;
+    text-decoration: none;    
+
+    &.crop-it{
+        overflow:hidden;
+    }
 }
     .forkit .tag {
         display: block;
