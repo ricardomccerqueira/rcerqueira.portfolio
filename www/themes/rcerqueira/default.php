@@ -10,8 +10,149 @@ $this->inc('elements/header.php');
 	<a class="forkit crop-it" data-text="Résumé" data-text-detached="Drag down >" href="/resumee"></a>
 
 	<div class="forkit-curtain">
-		<div class="close-button"></div>
-		RIBBBBOOOOOONNNNNN
+		<section id="resume">
+			<div class="close-button float-right">close</div>
+			
+			<h1>
+				Ricardo Cerqueira	
+			</h1>
+
+			<article class="article float-left">
+				<figure class="figure">
+					<img src="" alt="">
+				</figure>
+				<h1>Front-end Developer</h1>
+				<p>
+					Pellentesque sollicitudin congue diam, et gravida leo posuere at. Nunc fermentum erat at diam convallis vel porttitor purus congue. Proin blandit, odio ac aliquet fermentum, lectus est dictum nisl, ac elementum dui ante et ipsum.
+				</p>				
+			</article>
+
+			<article class="article float-right">
+				<div class="title-bar">
+					Contacts
+				</div>
+
+				<ul>
+					<li>
+						+351 93 823 85 09
+					</li>	
+					<li>
+						<a href="mailto:mail@rcerqueira.com?subject=ContactPortfolio">mail@rcerqueira.com</a>
+					</li>
+				</ul>
+			</article>
+
+			<article class="article float-left clearfix">
+				<div class="title-bar">
+					Skills
+				</div>
+
+				<ul>
+					<li>
+						Javascript frontend
+					</li>
+					<li>
+						Javascript backend - nodejs
+					</li>
+					<li>
+						HTML
+					</li>
+				</ul>
+			</article>
+
+			<article class="article float-right">
+				<div class="title-bar">
+					Work Experience
+				</div>
+
+				<ol>
+					<li>
+						<h1>
+							Monday Interactive marketing
+						</h1>
+
+						<p>
+							01/01/2001 - actual date
+						</p>
+
+						<strong>
+							HTML Developer
+						</strong>
+					</li>
+
+					<li>
+						<h1>
+							New Exit
+						</h1>
+
+						<p>
+							01/01/2001 - 02/12/2001
+						</p>
+
+						<strong>
+							Flash Developer
+						</strong>
+					</li>
+				</ol>
+			</article>
+
+			<article class="article float-left clearfix">
+				<div class="title-bar">
+					Education
+				</div>
+
+				<ol>
+					<li>
+						<h1>
+							Etic
+						</h1>
+
+						<p>
+							01/01/2001 - 02/12/2001
+						</p>
+
+						<strong>
+							graphic design
+						</strong>
+					</li>
+
+					<li>
+						<h1>
+							New Exit
+						</h1>
+
+						<p>
+							01/01/2001 - 02/12/2001
+						</p>
+
+						<strong>
+							Flash Developer
+						</strong>
+					</li>
+				</ol>
+			</article>
+
+			<article class="article float-right">
+				<div class="title-bar">
+					Follow me
+				</div>
+
+				<ul>
+					<li>
+						<a href="#">icon-git</a>
+					</li>
+					<li>
+						<a href="#">icon-delicious</a>
+					</li>
+					<li>
+						<a href="#">icon-plus</a>
+					</li>
+					<li>
+						<a href="#">icon-linkedin</a>
+					</li>
+				</ul>
+			</article>
+		</section>
 	</div>
 	<div id="main-wraper">
 		<header id="header">
@@ -71,9 +212,10 @@ $this->inc('elements/header.php');
 </body>
 
 <script type="text/javascript">
-$(function(){
-	Portfolio.init();
-}); 
+	$(function(){
+		Portfolio.init();
+	});
+
     //analytics
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-37357037-1']);
