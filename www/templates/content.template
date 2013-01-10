@@ -2,6 +2,7 @@
 	<% _.each(item.articles, function(article) { %>
 		<article class="<%= item.title %> item" >
 			<figure>
+				<img class="overlayer" src="img/imagesoverlayer.png">
 				<img src="img/<%=article.image %>" alt="<%= article.title %>">
 			</figure>
 
