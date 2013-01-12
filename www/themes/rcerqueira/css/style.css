@@ -261,6 +261,7 @@ td {
    ========================================================================== */
 #main-wraper {
   min-height: 70%;
+  z-index: 1;
   transition: all 1s;
   -moz-transition: all 1s;
   -webkit-transition: all 1s;
@@ -544,7 +545,7 @@ td {
   width: 100%;
   height: 100%;
   top: -100%;
-  z-index: 50;
+  z-index: 2;
   background: black;
   overflow: scroll;
 }
@@ -600,9 +601,9 @@ td {
 }
 .forkit-curtain #resume .article .title-bar {
   color: #ffffff;
-  background: #505050;
+  border-bottom: 1px solid #505050;
   text-align: left;
-  padding: 2px 0 0 3%;
+  padding: 2px 0 5px 3%;
   font-size: 15px;
   width: 95%;
   height: 22px;
@@ -736,6 +737,11 @@ td {
 .preloading {
   pointer-events: none !important;
   cursor: progress !important;
+}
+/*BACKOFFICE OVERWRITE*/
+div.ccm-add-block,
+div.ccm-add-block-global {
+  color: #ffffff;
 }
 /*/* ==|== media Querries =======================================================
    ========================================================================== */

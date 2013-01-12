@@ -2,7 +2,7 @@
 <!doctype html>
 <html lang="en">
 <?php 
-$this->inc('elements/header.php'); 
+	$this->inc('elements/header.php'); 
 ?>
 <body>
 	<!-- <a href="https://github.com/ricardomccerqueira" target="_blank"><img style="position: absolute; top: 0px; right: 0px; border: 0; z-index:999;" src="img/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>-->
@@ -13,18 +13,14 @@ $this->inc('elements/header.php');
 		<section id="resume">
 			<div class="close-button float-right">close</div>
 			
-			<h1>
-				Ricardo Cerqueira	
-			</h1>
-
+			<?php $a = new Area('resume_name'); $a->display($c); ?>
+			
 			<article class="article float-left">
 				<figure class="figure">
-					<img src="" alt="">
+					<?php $a = new Area('resume_picture'); $a->display($c); ?>
 				</figure>
-				<h1>Front-end Developer</h1>
-				<p>
-					Pellentesque sollicitudin congue diam, et gravida leo posuere at. Nunc fermentum erat at diam convallis vel porttitor purus congue. Proin blandit, odio ac aliquet fermentum, lectus est dictum nisl, ac elementum dui ante et ipsum.
-				</p>				
+				
+				<?php $a = new Area('resume_description'); $a->display($c); ?>
 			</article>
 
 			<article class="article float-right">
@@ -32,6 +28,7 @@ $this->inc('elements/header.php');
 					Contacts
 				</div>
 
+				<?php $a = new Area('resume_contacts'); $a->display($c); ?>
 				<ul>
 					<li>
 						+351 93 823 85 09
@@ -47,17 +44,7 @@ $this->inc('elements/header.php');
 					Skills
 				</div>
 
-				<ul>
-					<li>
-						Javascript frontend
-					</li>
-					<li>
-						Javascript backend - nodejs
-					</li>
-					<li>
-						HTML
-					</li>
-				</ul>
+				<?php $a = new Area('resume_skills'); $a->display($c); ?>
 			</article>
 
 			<article class="article float-right">
@@ -65,35 +52,7 @@ $this->inc('elements/header.php');
 					Work Experience
 				</div>
 
-				<ol>
-					<li>
-						<h1>
-							Monday Interactive marketing
-						</h1>
-
-						<p>
-							01/01/2001 - actual date
-						</p>
-
-						<strong>
-							HTML Developer
-						</strong>
-					</li>
-
-					<li>
-						<h1>
-							New Exit
-						</h1>
-
-						<p>
-							01/01/2001 - 02/12/2001
-						</p>
-
-						<strong>
-							Flash Developer
-						</strong>
-					</li>
-				</ol>
+				<?php $a = new Area('resume_workexperience'); $a->display($c); ?>				
 			</article>
 
 			<article class="article float-left clearfix">
@@ -101,6 +60,7 @@ $this->inc('elements/header.php');
 					Education
 				</div>
 
+				<?php $a = new Area('resume_education'); $a->display($c); ?>
 				<ol>
 					<li>
 						<h1>
@@ -137,6 +97,7 @@ $this->inc('elements/header.php');
 					Follow me
 				</div>
 
+				<?php $a = new Area('resume_followme'); $a->display($c); ?>
 				<ul>
 					<li>
 						<a href="#">icon-git</a>

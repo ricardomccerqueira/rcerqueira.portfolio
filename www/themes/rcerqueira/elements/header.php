@@ -13,7 +13,6 @@
 	<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="<?php echo $this->getThemePath()?>/css/style.css">
 	
-
 	<script type="text/javascript" src="<?php echo $this->getThemePath()?>/js/libs/jquery-css-transform.js"></script>
 	<script type="text/javascript" src="<?php echo $this->getThemePath()?>/js/libs/jquery-animate-css-rotate-scale.js"></script>
 

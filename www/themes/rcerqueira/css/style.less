@@ -91,6 +91,7 @@ td { vertical-align: top; }
 
 #main-wraper{
     min-height: 70%;
+    z-index:1;
     .anim-intro();
     .brightness1();
 
@@ -405,7 +406,7 @@ td { vertical-align: top; }
     width: 100%;
     height: 100%;
     top: -100%;
-    z-index:50;
+    z-index:2;
     background:black;
     overflow:scroll;
 
@@ -463,9 +464,9 @@ td { vertical-align: top; }
 
             .title-bar{
                 color:@light-text;
-                background:@dark-text;
+                border-bottom: 1px solid @dark-text;
                 text-align:left;
-                padding: 2px 0 0 3%;
+                padding: 2px 0 5px 3%;
                 font-size: 15px;
                 width: 95%;
                 height: 22px;
@@ -576,6 +577,12 @@ td { vertical-align: top; }
 .preloading{
     pointer-events:none !important;
     cursor: progress !important;
+}
+
+
+/*BACKOFFICE OVERWRITE*/
+div.ccm-add-block, div.ccm-add-block-global{
+    color:@light-text;
 }
 
 /*/* ==|== media Querries =======================================================
