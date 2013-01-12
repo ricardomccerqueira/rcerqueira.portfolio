@@ -12,8 +12,8 @@ $(function(){
 			STATE_OPENED = 2,
 
 			TAG_HEIGHT = 30,
-			TAG_WIDTH = 200,
-			MAX_STRAIN = 40,
+			TAG_WIDTH = 100,
+			MAX_STRAIN = 30,
 
 			// Factor of page height that needs to be dragged for the
 			// curtain to fall
@@ -286,7 +286,7 @@ $(function(){
 
 			dom.ribbon.style[ prefix( 'transform' ) ] = transform( 0, curtainCurrentY, 0 );
 			
-			if(rotation < 108){
+			if(rotation < 65){
 				$(".forkit").addClass('crop-it');
 			}else{
 				$(".forkit").removeClass('crop-it');

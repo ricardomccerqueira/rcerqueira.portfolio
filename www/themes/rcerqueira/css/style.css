@@ -490,21 +490,14 @@ td {
   position: relative !important;
   top: 3px !important;
 }
-#main-wraper #contactFormHolder {
-  width: 100%;
-  background: red;
-  position: relative;
-  margin-top: 600px;
-  height: 1600px;
-  display: none;
-}
 .forkit {
   position: absolute;
   right: 0;
   top: 0;
-  z-index: 40;
-  width: 175px;
-  height: 450px;
+  z-index: 2;
+  width: 135px;
+  height: 0px;
+  padding-bottom: 200px;
   text-decoration: none;
 }
 .forkit.crop-it {
@@ -541,13 +534,13 @@ td {
   transform-origin: 0px 0px;
 }
 .forkit-curtain {
-  position: fixed;
+  position: absolute;
   width: 100%;
   height: 100%;
   top: -100%;
   z-index: 2;
   background: black;
-  overflow: scroll;
+  overflow: hidden;
 }
 .forkit-curtain #resume {
   width: 90%;
@@ -589,8 +582,14 @@ td {
   background: white;
   height: 120px;
   float: left;
-  border-radius: 2px;
+  border-radius: 5px;
   margin-right: 4%;
+  overflow: hidden;
+  border: 4px solid white;
+}
+.forkit-curtain #resume .article .figure img {
+  width: 100%;
+  height: auto;
 }
 .forkit-curtain #resume .article h1 {
   color: #505050;
@@ -801,7 +800,7 @@ div.ccm-add-block-global {
     page-break-after: avoid;
   }
 }
-@media screen and (max-width: 1750px) {
+@media screen and (max-width: 1450px) {
   .forkit {
     display: none;
   }

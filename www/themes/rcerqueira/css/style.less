@@ -338,25 +338,17 @@ td { vertical-align: top; }
             }
         }
     }
-
-    #contactFormHolder{
-        width: 100%;
-        background: red;
-        position: relative;
-        margin-top:600px;
-        height: 1600px;
-        display: none;
-    }
 }
 
 .forkit {
     position: absolute;
     right: 0;
     top: 0;
-    z-index:40;
+    z-index:2;
 
-    width: 175px;
-    height: 450px;
+    width: 135px;
+    height:0px;
+    padding-bottom: 200px;
 
     text-decoration: none;    
 
@@ -402,13 +394,13 @@ td { vertical-align: top; }
 }   
 
 .forkit-curtain {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 100%;
     top: -100%;
     z-index:2;
     background:black;
-    overflow:scroll;
+    overflow:hidden;
 
     #resume{
         width:90%;
@@ -450,8 +442,15 @@ td { vertical-align: top; }
                 background: white;
                 height: 120px;
                 float: left;
-                border-radius: 2px;
+                border-radius: 5px;
                 margin-right: 4%;
+                overflow: hidden;
+                border: 4px solid white;
+
+                img{
+                    width:100%;
+                    height:auto;
+                }
             }
 
             h1{
@@ -603,7 +602,7 @@ div.ccm-add-block, div.ccm-add-block-global{
   h2, h3 { page-break-after: avoid; }
 }
 
-@media screen and (max-width: 1750px){
+@media screen and (max-width: 1450px){
     .forkit{
         display:none;
     }

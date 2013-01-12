@@ -29,22 +29,31 @@
 				</div>
 
 				<?php $a = new Area('resume_contacts'); $a->display($c); ?>
-				<ul>
-					<li>
-						+351 93 823 85 09
-					</li>	
-					<li>
-						<a href="mailto:mail@rcerqueira.com?subject=ContactPortfolio">mail@rcerqueira.com</a>
-					</li>
-				</ul>
 			</article>
 
 			<article class="article float-left clearfix">
 				<div class="title-bar">
-					Skills
+					Coding Skills
 				</div>
 
 				<?php $a = new Area('resume_skills'); $a->display($c); ?>
+			</article>
+
+			<article class="article float-right">
+				<div class="title-bar">
+					Software skills
+				</div>
+
+				<?php $a = new Area('resume_sofware'); $a->display($c); ?>
+			</article>
+			
+
+			<article class="article float-left clearfix">
+				<div class="title-bar">
+					Education
+				</div>
+
+				<?php $a = new Area('resume_education'); $a->display($c); ?>
 			</article>
 
 			<article class="article float-right">
@@ -55,64 +64,7 @@
 				<?php $a = new Area('resume_workexperience'); $a->display($c); ?>				
 			</article>
 
-			<article class="article float-left clearfix">
-				<div class="title-bar">
-					Education
-				</div>
-
-				<?php $a = new Area('resume_education'); $a->display($c); ?>
-				<ol>
-					<li>
-						<h1>
-							Etic
-						</h1>
-
-						<p>
-							01/01/2001 - 02/12/2001
-						</p>
-
-						<strong>
-							graphic design
-						</strong>
-					</li>
-
-					<li>
-						<h1>
-							New Exit
-						</h1>
-
-						<p>
-							01/01/2001 - 02/12/2001
-						</p>
-
-						<strong>
-							Flash Developer
-						</strong>
-					</li>
-				</ol>
-			</article>
-
-			<article class="article float-right">
-				<div class="title-bar">
-					Follow me
-				</div>
-
-				<?php $a = new Area('resume_followme'); $a->display($c); ?>
-				<ul>
-					<li>
-						<a href="#">icon-git</a>
-					</li>
-					<li>
-						<a href="#">icon-delicious</a>
-					</li>
-					<li>
-						<a href="#">icon-plus</a>
-					</li>
-					<li>
-						<a href="#">icon-linkedin</a>
-					</li>
-				</ul>
-			</article>
+			
 		</section>
 	</div>
 	<div id="main-wraper">
@@ -150,7 +102,7 @@
 		<footer id="footer">
 			<ul id="footer-links">
 				<li>
-					<a class="contactButton" href="mailto:mail@rcerqueira.com?subject=ContactPortfolio">mail@rcerqueira.com</a>
+					<a class="contactButton" href="mailto:mail@rcerqueira.com?subject=ContactPortfolio">RÉSUMÉ</a>
 				</li>
 
 				<li>
