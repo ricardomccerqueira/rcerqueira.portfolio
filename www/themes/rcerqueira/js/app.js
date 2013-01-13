@@ -1,6 +1,8 @@
 Portfolio.app=$.sammy(function(){
 	this.loaderElement	= null;
-	this.appisloaded = false;
+	this.previouspage	= '';
+	this.appisloaded    = false;
+	this.resumeisopen   = false;
 	
 	this.use('Template');
 
@@ -62,6 +64,17 @@ Portfolio.app=$.sammy(function(){
 		Portfolio.app.appisloaded = true;
 		var filter = this.params['filter'];
 
+		if(Portfolio.app.resumeisopen == true){
+			Portfolio.app.resumeisopen = false;
+			$(".resume-curtain").slideUp();
+		}
+
+		if(filter == Portfolio.app.previouspage){
+			return;
+		}
+
+		Portfolio.app.previouspage = filter;
+
 		var getSectionContent = _.find(Portfolio.websiteData.sections, function(context){
 			return context.title == filter;
 		});
@@ -73,12 +86,11 @@ Portfolio.app=$.sammy(function(){
 		$('#nav .selected-menu').removeClass('selected-menu');
 		$('#nav .'+filter).addClass('selected-menu');
 
-		$(".contactButton").attr("href","#/"+filter+"/contactme");
-
-		$('#contactFormHolder').fadeOut("fast");
+		$(".resumebutton").attr("href","#/"+filter+"/resume");
+		$("#resume .close-button").attr("href","#/"+filter);
 	});
 
-	this.get('#/:filter/contactme', function(context){
+	this.get('#/:filter/resume', function(context){
 		if(Portfolio.app.appisloaded == false){
 			Portfolio.app.appisloaded = true;
 
@@ -96,27 +108,12 @@ Portfolio.app=$.sammy(function(){
 			$('#nav .'+filter).addClass('selected-menu');
 			
 			$(".contactButton").attr("href","#/"+filter+"/contactme");
+			$("#resume .close-button").attr("href","#/"+filter);
 		}
 
-		var scrollYPos = $('#contactFormHolder').offset().top;
-		TweenLite.to(window, 2, {scrollTo:{y:scrollYPos, x:0}, ease:Power4.easeOut})
+		TweenLite.to(window, 2, {scrollTo:{y:0, x:0}, ease:Power4.easeOut})
 
-		setTimeout(function(){
-			$('#contactFormHolder').fadeIn("slow",function(){
-				var scrollYPos = $('#contactFormHolder').offset().top;
-				TweenLite.to(window, 2, {scrollTo:{y:scrollYPos, x:0}, ease:Power4.easeOut})			
-			});
-		},1000);
-
-		var controller 		= $.superscrollorama();
-		var scrollDuration  = 600; 
-
-		controller.addTween('#contactFormHolder', TweenMax.from( $('#contactFormHolder'), 2, {css:{opacity: 0}}), scrollDuration);
-//      controller.addTween('#fade-it', TweenMax.from( $('#fade-it'), .5, {css:{opacity: 0}}), scrollDuration);
-  //    controller.addTween('#fly-it', TweenMax.from( $('#fly-it'), .25, {css:{right:'1000px'}, ease:Quad.easeInOut}), scrollDuration);
-    //  controller.addTween('#spin-it', TweenMax.from( $('#spin-it'), .25, {css:{opacity:0, rotation: 720}, ease:Quad.easeOut}), scrollDuration);
-    //  controller.addTween('#scale-it', TweenMax.fromTo( $('#scale-it'), .25, {css:{opacity:0, fontSize:'20px'}, immediateRender:true, ease:Quad.easeInOut}, {css:{opacity:1, fontSize:'240px'}, ease:Quad.easeInOut}), scrollDuration);
-    //  controller.addTween('#smush-it', TweenMax.fromTo( $('#smush-it'), .25, {css:{opacity:0, 'letter-spacing':'30px'}, immediateRender:true, ease:Quad.easeInOut}, {css:{opacity:1, 'letter-spacing':'-10px'}, ease:Quad.easeInOut}), scrollDuration); // 100 px offset for better timing
-
+		$(".resume-curtain").slideDown();
+		Portfolio.app.resumeisopen = true;
 	});
 });

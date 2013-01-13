@@ -7,11 +7,10 @@
 <body>
 	<!-- <a href="https://github.com/ricardomccerqueira" target="_blank"><img style="position: absolute; top: 0px; right: 0px; border: 0; z-index:999;" src="img/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>-->
 	<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-	<a class="forkit crop-it" data-text="Résumé" data-text-detached="Drag down >" href="/resumee"></a>
 
-	<div class="forkit-curtain">
+	<div class="resume-curtain">
 		<section id="resume">
-			<div class="close-button float-right">close</div>
+			<a class="close-button float-right" href="#">close</a>
 			
 			<?php $a = new Area('resume_name'); $a->display($c); ?>
 			
