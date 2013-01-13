@@ -102,7 +102,7 @@
 		<footer id="footer">
 			<ul id="footer-links">
 				<li>
-					<a class="contactButton" href="mailto:mail@rcerqueira.com?subject=ContactPortfolio">RÉSUMÉ</a>
+					<a class="resumebutton" href="#">Résumé</a>
 				</li>
 
 				<li>
