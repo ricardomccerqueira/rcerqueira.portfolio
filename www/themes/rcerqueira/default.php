@@ -24,7 +24,7 @@
 
 			<article class="article float-right">
 				<div class="title-bar">
-					Contacts
+					Personal info
 				</div>
 
 				<?php $a = new Area('resume_contacts'); $a->display($c); ?>

@@ -755,6 +755,101 @@ div.ccm-add-block-global {
   h3 {
     page-break-after: avoid;
   }
+  .resume-curtain {
+    position: relative;
+    width: 100%;
+    display: block;
+    z-index: 2;
+    background: white;
+    color: black;
+    overflow: hidden;
+  }
+  .resume-curtain #resume {
+    width: 90%;
+    max-width: 1210px;
+    padding-top: 10px;
+    margin: auto;
+  }
+  .resume-curtain #resume .close-button {
+    display: none;
+  }
+  .resume-curtain #resume h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 51px;
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+    font-family: 'Yanone Kaffeesatz';
+  }
+  .resume-curtain #resume .article {
+    width: 48%;
+    margin-bottom: 35px;
+  }
+  .resume-curtain #resume .article .figure {
+    width: 100px;
+    background: gray;
+    height: 120px;
+    float: left;
+    border-radius: 5px;
+    margin-right: 4%;
+    overflow: hidden;
+    border: 4px solid white;
+  }
+  .resume-curtain #resume .article .figure img {
+    width: 100%;
+    height: auto;
+  }
+  .resume-curtain #resume .article h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 1px 0 4px 0;
+    text-transform: uppercase;
+    font-family: 'Open Sans', arial, sans-serif;
+  }
+  .resume-curtain #resume .article .title-bar {
+    color: black;
+    font-weight: bold;
+    border-bottom: 1px solid #505050;
+    text-align: left;
+    padding: 2px 0 5px 3%;
+    font-size: 15px;
+    width: 95%;
+    height: 22px;
+    font-family: 'Yanone Kaffeesatz';
+    letter-spacing: 1px;
+  }
+  .resume-curtain #resume .article ul,
+  .resume-curtain #resume .article ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0 0 3%;
+  }
+  .resume-curtain #resume .article ul li,
+  .resume-curtain #resume .article ol li {
+    list-style-type: none;
+    color: black;
+    font-size: 11px;
+    margin-bottom: 15px;
+  }
+  .resume-curtain #resume .article ul li h1,
+  .resume-curtain #resume .article ol li h1 {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 1px 0 2px 0;
+    font-family: 'Open Sans', arial, sans-serif;
+  }
+  .resume-curtain #resume .article p {
+    color: black;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+  }
+  .resume-curtain #resume .article a {
+    color: black;
+    text-decoration: none;
+    font-size: 11px;
+  }
 }
 @media screen and (max-width: 1450px) {
   .forkit {
