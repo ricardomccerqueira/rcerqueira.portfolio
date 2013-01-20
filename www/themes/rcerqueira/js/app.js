@@ -64,6 +64,8 @@ Portfolio.app=$.sammy(function(){
 		Portfolio.app.appisloaded = true;
 		var filter = this.params['filter'];
 
+		$("title").html("Ricardo Cerqueira's Portfolio - " + filter);
+
 		if(Portfolio.app.resumeisopen == true){
 			Portfolio.app.resumeisopen = false;
 			$(".resume-curtain").slideUp();
@@ -95,6 +97,8 @@ Portfolio.app=$.sammy(function(){
 			Portfolio.app.appisloaded = true;
 
 			var filter = this.params['filter'];
+
+			$("title").html("Ricardo Cerqueira's Portfolio - Résumé");
 
 			var getSectionContent = _.find(Portfolio.websiteData.sections, function(context){
 				return context.title == filter;

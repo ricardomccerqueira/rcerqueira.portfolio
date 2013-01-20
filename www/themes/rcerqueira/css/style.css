@@ -714,18 +714,6 @@ div.ccm-add-block-global {
   a:visited {
     text-decoration: underline;
   }
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-  .ir a:after,
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
-    content: "";
-  }
-  /* Don't show links for images, or javascript/internal links */
   pre,
   blockquote {
     border: 1px solid #999;
@@ -755,6 +743,9 @@ div.ccm-add-block-global {
   h3 {
     page-break-after: avoid;
   }
+  #main-wraper {
+    display: none;
+  }
   .resume-curtain {
     position: relative;
     width: 100%;
@@ -773,6 +764,9 @@ div.ccm-add-block-global {
   .resume-curtain #resume .close-button {
     display: none;
   }
+  .resume-curtain #resume .websitebio {
+    display: none;
+  }
   .resume-curtain #resume h1 {
     color: black;
     font-weight: bold;
@@ -783,7 +777,7 @@ div.ccm-add-block-global {
   }
   .resume-curtain #resume .article {
     width: 48%;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
   }
   .resume-curtain #resume .article .figure {
     width: 100px;
@@ -823,14 +817,14 @@ div.ccm-add-block-global {
   .resume-curtain #resume .article ol {
     list-style-type: none;
     margin: 0;
-    padding: 10px 0 0 3%;
+    padding: 7px 0 0 3%;
   }
   .resume-curtain #resume .article ul li,
   .resume-curtain #resume .article ol li {
     list-style-type: none;
     color: black;
     font-size: 11px;
-    margin-bottom: 15px;
+    margin-bottom: 7px;
   }
   .resume-curtain #resume .article ul li h1,
   .resume-curtain #resume .article ol li h1 {
